@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+html {
+	background-color: #1e1e1e;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+
+	background: rgb(34, 193, 195);
+	background: linear-gradient(
+		339deg,
+		rgba(34, 193, 195, 1) 0%,
+		rgba(253, 187, 45, 1) 100%
+	);
+	color: #ccc;
+
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper {
+	height: 46vh;
+	width: 45vw;
+	max-width: 45vw;
+	max-height: 46vh;
+
+	border-radius: 4.6vh;
+	background-color: #09131b;
+	box-shadow: 1.2vh 1.2vh 0.6vh 0.2vh rgba(29, 29, 29, 0.8);
+
+	padding: 0 1.8vh 0 1.8vh;
+
+	align-items: center;
+}
+.wrapper .caption-wrapper {
+	padding-top: 4.6vh;
+}
+.wrapper input {
+	margin-top: 2.3vh;
+	background: transparent;
+	border: 0;
+	border-bottom: 0.25vh solid #2b1532;
+	color: #ccc;
+	font-weight: 600;
+	padding: 0.7vh 1vh;
+	outline: none;
+
+	transition: 170ms linear;
+}
+.wrapper input:hover {
+	border-bottom-color: #6e2d7d;
+}
+.wrapper input:focus {
+	border-bottom-color: #6e2d7d;
+	transform: borde;
+}
+.wrapper input::placeholder {
+	font-weight: 600;
+}
+#B-GetWeather {
+	margin-top: 2.3vh;
+	margin-left: 1vw;
+
+	height: 3vh;
+	padding: 0.7vw 1;
+	background-color: #f4bb33;
+	border-radius: 0.7vh;
+
+	font-weight: 600;
+	border: 0.25vh solid #b07c00;
+
+	cursor: pointer;
+	transition: transform 500ms ease;
+}
+
+#B-GetWeather:hover {
+	transform: scale(1.1) translateY(-0.4vh);
+}
+.wrapper #info {
+	margin: 1.8vh;
+	padding: 1.8vh;
+	color: #ccc;
+
+	border: 0.3vh solid #f4bb33;
+	border-radius: 2.2vh;
+
+	text-align: center;
+}
+.wrapper .error p {
+	text-align: center;
+}
+.wrapper .error {
+	margin-top: 1.8vh;
+	text-align: center;
+	color: #d03939;
+}
+.caption-wrapper,
+.dialog-wrapper {
+	text-align: center;
+}
+.textCity {
+	color: #fa0;
+}
+
+/* media */
+@media (max-width: 767px) {
+	h1 {
+		font-size: calc(20px + 32.4 * ((100vw - 320px) / 1980));
+	}
+}
+@media (min-width: 767px) {
+	h1 {
+		font-size: calc(24px + 16 * (100vw / 1980));
+	}
+}
+@media (max-width: 767px) {
+	h3 {
+		font-size: calc(16px + 18 * ((100vw - 320px) / 1980));
+	}
+}
+@media (min-width: 767px) {
+	h3 {
+		font-size: calc(16px + 16 * (100vw / 1980));
+	}
+}
+@media (max-width: 767px) {
+	p {
+		font-size: calc(8px + 27.2 * ((100vw - 320px) / 1980));
+	}
+}
+@media (min-width: 767px) {
+	p {
+		font-size: calc(13px + 16 * (100vw / 1980));
+	}
+}
+@media (max-width: 767px) {
+	.wrapper .error {
+		font-size: calc(13px + 27.2 * ((100vw - 320px) / 1980));
+	}
+}
+@media (min-width: 767px) {
+	.wrapper .error {
+		font-size: calc(13px + 16 * (100vw / 1980));
+	}
+}
+@media (max-width: 767px) {
+	#B-GetWeather {
+		font-size: calc(8px + 27.2 * ((100vw - 320px) / 1980));
+	}
+}
+@media (min-width: 767px) {
+	#B-GetWeather {
+		font-size: calc(7px + 10 * (100vw / 1980));
+	}
+}
+@media (max-width: 767px) {
+	.wrapper input::placeholder {
+		font-size: calc(6px + 27.2 * ((100vw - 320px) / 1980));
+	}
+}
+@media (min-width: 767px) {
+	.wrapper input::placeholder {
+		font-size: calc(7px + 10 * (100vw / 1980));
+	}
+}
+@media (max-width: 767px) {
+	.wrapper input {
+		font-size: calc(8px + 27.2 * ((100vw - 320px) / 1980));
+	}
+}
+@media (min-width: 767px) {
+	.wrapper input {
+		font-size: calc(7px + 10 * (100vw / 1980));
+	}
+}
